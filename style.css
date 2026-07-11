@@ -1244,6 +1244,33 @@ footer .bottom_footer .payment_img {
 .checkout .input_info .inputs:focus {
     border-color: var(--main_color);
 }
+
+@media (max-width: 700px) {
+    .checkout .container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 25px;
+    }
+    .checkout .ordersummary,
+    .checkout .input_info {
+        width: 100%;
+        padding: 0;
+    }
+    .checkout .ordersummary {
+        border-radius: 20px;
+        padding: 20px;
+    }
+    .checkout .input_info {
+        width: 100%;
+    }
+    .checkout .input_info .address {
+        padding: 15px;
+    }
+    .checkout .ordersummary .bottom_summary,
+    .checkout .ordersummary .button_div {
+        padding-top: 20px;
+    }
+}
 body.dark-theme {
     --main_color: #ffffff;
     --p_color: #b0b3b8;
